@@ -1,5 +1,7 @@
 import { fetchWeatherApi } from "openmeteo";
 import CITY from "./city.json";
+import { wmoToIcon, wmoToDescription } from "../../services/converters";
+
 
 export default async function handler(req, res) {
   const params = {
@@ -28,6 +30,9 @@ export default async function handler(req, res) {
   const current = response.current();
   const daily = response.daily();
 
+  const weatherCode = current.variables(6).value();
+  const isDay = current.variables(7).value();
+
   res.status(200).json({
     name: CITY.name,
     sys: {
@@ -37,8 +42,8 @@ export default async function handler(req, res) {
     },
     weather: [
       {
-        description: '',
-        icon: '',
+        description: wmoToDescription(weatherCode),
+        icon: wmoToIcon(weatherCode, isDay === 1),
       },
     ],
     main: {
