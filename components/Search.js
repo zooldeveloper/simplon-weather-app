@@ -1,5 +1,5 @@
 import styles from "./Search.module.css";
-
+// Ths component is not currently used, but it can be easily integrated in the future.
 export const Search = ({
   placeHolder,
   value,
