@@ -1,42 +1,43 @@
 # Weather App
 
-Check the current weather on any city on the planet. Switch between metric and imperial units.
+Check the current weather of Riga city. Switch between metric and imperial units.
 
 ![Alt img](https://images.ctfassets.net/zlsyc9paq6sa/3uBrJ07WSM40FpolgjInHY/7d886cb4187b52194bf9b63c183a1d3a/1627637330_x.gif)
 
 ## Features
 
-1. User's ability to search cities
+1. Current local time and date
 
-2. Current local time and date
+2. Temperatures and humidity
 
-3. Temperatures and humidity
+3. Wind speed and direction
 
-4. Wind speed and direction
+4. Sunrise and sunset times
 
-5. Sunrise and sunset times
+5. Metric vs Imperial system
 
-6. Metric vs Imperial system
-
-7. Error handling and loading info
+6. Error handling and loading info
 
 ## Installation
 
-1. `git clone https://github.com/madzadev/weather-app.git`
+1. `git clone https://github.com/zooldeveloper/simplon-weather-app.git`
 
-2. `cd weather-app`
+2. `cd simplon-weather-app`
 
 3. `npm install`
 
-4. Log-in to [Openweathermap.com](https://openweathermap.org/)
+4. `npm run dev`
 
-5. Create an API key
+## API Testing
 
-6. `cp .env.example .env.local`
+To see the weather data of a different city, modify the following values in the confugration file: `/pages/api/city.json`  
 
-7. Paste API key for `OPENWEATHER_API_KEY`
+1. "name": "city_name", 
+2.  "country": "city_county", 
+3.  "lat": city_latitude, 
+4.  "lon": city_longitude
 
-8. `npm run dev`
+For more info about the weather api, check the Open Meteo documentation [Open-Meteo.com](https://open-meteo.com/)
 
 ## Contributions
 
