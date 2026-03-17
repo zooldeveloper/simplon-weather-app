@@ -1,6 +1,6 @@
 # Weather App
 
-Check the current weather of Riga city. Switch between metric and imperial units.
+Check the current weather of Saint Nazaire city. Switch between metric and imperial units.
 
 ![Alt img](https://images.ctfassets.net/zlsyc9paq6sa/3uBrJ07WSM40FpolgjInHY/7d886cb4187b52194bf9b63c183a1d3a/1627637330_x.gif)
 
